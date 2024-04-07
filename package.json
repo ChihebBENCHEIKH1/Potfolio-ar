@@ -6,17 +6,17 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
+    "build": "tsc --noEmit && vite build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "gh-pages": "^6.1.1",
     "fortawesome": "^0.0.1-security",
     "framer-motion": "^11.0.24",
+    "gh-pages": "^6.1.1",
     "gsap": "^3.12.5",
     "hover.css": "^2.3.2",
     "ionicons": "^7.3.1",
@@ -24,6 +24,7 @@
     "owl.carousel": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
     "typed.js": "^2.1.0"
   },
   "devDependencies": {

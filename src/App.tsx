@@ -1,13 +1,13 @@
 import "./App.css";
-import Navbar from "./components/NavBar";
-import { textContent } from "./utils/Text";
-import { Header } from "./components/Header";
-import { About } from "./components/About";
-import { CVDownload } from "./components/CVDownload";
-import { Portfolio } from "./components/Portfolio";
-import { Footer } from "./components/Footer";
-import { Contact } from "./components/Contact";
 import { AnimatePresence, motion } from "framer-motion";
+import { Home } from "./pages/Home";
+import {
+  BrowserRouter,
+  Route,
+  Router,
+  RouterProvider,
+  Routes,
+} from "react-router-dom";
 function App() {
   return (
     <>
@@ -32,13 +32,12 @@ function App() {
             exitState: {},
           }}
         >
-          <Navbar titles={textContent} />
-          <Header titles={textContent} />
-          <About titles={textContent} />
-          <CVDownload titles={textContent} />
-          <Portfolio titles={textContent} />
-          <Contact titles={textContent} />
-          <Footer titles={textContent} />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="*" element={<Home />} />
+            </Routes>
+          </BrowserRouter>
         </motion.div>
       </AnimatePresence>
     </>

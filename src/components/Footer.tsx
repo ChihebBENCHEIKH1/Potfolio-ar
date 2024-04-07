@@ -1,4 +1,4 @@
-import { useLanguage } from "../context/LanguageContext";
+import { Language, useLanguage } from "../context/LanguageContext";
 
 export const Footer = ({ titles }: any) => {
   const { lang } = useLanguage();
@@ -18,7 +18,7 @@ export const Footer = ({ titles }: any) => {
             <a
               className="LI-simple-link"
               href="https://www.linkedin.com/in/chiheb-ben-cheikh-448552221/"
-              style={lang === "ar" ? { marginRight: "45px" } : {}}
+              style={lang === ("ar" as Language) ? { marginRight: "45px" } : {}}
             >
               {titles[lang]["name"]}
             </a>
