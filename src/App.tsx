@@ -1,13 +1,8 @@
 import "./App.css";
 import { AnimatePresence, motion } from "framer-motion";
 import { Home } from "./pages/Home";
-import {
-  BrowserRouter,
-  Route,
-  Router,
-  RouterProvider,
-  Routes,
-} from "react-router-dom";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <>
