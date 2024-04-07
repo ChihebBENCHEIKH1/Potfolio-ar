@@ -21,10 +21,14 @@ export const textContent = {
     myInfo: "FrontEnd Developer, Creative Maker, Problem Solver",
     headerTitle:
       "I'm a FrontEnd Developer skilled in seamlessly integrating user experience principles with expert knowledge in FrontEnd development.",
+    skill: "Skills",
     headerDescription:
       "With nearly a year of experience as a Junior FrontEnd Developer, my passion for innovation drives my proficiency in front-end development. I excel at crafting user-centric applications that consistently surpass expectations, and my commitment to tackling challenges sets me apart as a unique talent in the field.",
+    headerSkills:
+      "JavaScript, ES11, TypeScript, HTML, CSS, RWD, React, Hooks, Next.js, Gatsby, React Native, Redux, MobX, Emotion, Styled Components, MUI, AntD, Formik, React Hook Form, Yup, RFF, i18n, JSON Schema, Jest, React Testing Library, Jasmine, Cypress, Nx, Vite, Webpack, GitHub, GitLab, Azure, JIRA",
+
     cvDownload: "CV DOWNLOAD",
-    moreInfo: "For more information check my CV in your preferred language:",
+    moreInfo: "For more information check my CV :",
     portfolioTitle: "My Portfolio",
     role: "FrontEnd Developer",
 
@@ -65,9 +69,9 @@ export const textContent = {
         image: eShop,
       },
       {
-        title: " tailwind-react-landing ",
+        title: "E-learning Landing Page",
         description:
-          "A responsive landing page template built using React, Tailwind CSS, and Vite. The landing page is designed for an educational site, showcasing its features and services.",
+          "A responsive landing page built using React, Tailwind CSS, and Vite. The landing page is designed for an educational site, showcasing its features and services.",
         year: 2022,
         technologies: [
           "Vite",
@@ -91,79 +95,84 @@ export const textContent = {
         image: space,
       },
     ],
+    technologies: "Technologies",
     contactTitle: "GET IN TOUCH",
     codeProjects: "code projects",
     contactName: "Chiheb BEN CHEIKH",
     contactEmail: "bencheikh.chiheb@gmail.com",
+    linkedIn: "LinkedIn",
   },
-  de: {
-    navBar: ["Startseite", "Über uns", "Portfolio", "Kontakt"],
-    getInTouch: "KONTAKTIEREN SIE UNS",
-    name: "Chiheb BEN CHEIKH",
+  ar: {
+    navBar: ["الصفحة الرئيسية", "حول", "أعمالي", "اتصل"],
+    getInTouch: "تواصل معي",
+    name: "شهاب بن الشيخ",
     email: "bencheikh.chiheb@gmail.com",
-    I: "Ich bin ",
+    I: "أنا",
     qualities: [
-      "Chiheb BEN CHEIKH",
-      "ein Front-End-Entwickler",
-      "Neugierig",
-      "Kreativ",
-      "Kooperativ",
+      "شهاب بن الشيخ",
+      "مطور واجهة أمامية",
+      "فضولي",
+      "مبدع",
+      "متعاون",
     ],
-    myInfo: "Frontend-Entwickler, Kreativer Gestalter, Problemlöser",
+    myInfo: "مطور واجهة أمامية، صانع إبداعي، حل المشكلات",
     headerTitle:
-      "Ich bin ein Frontend-Entwickler mit Fachkenntnissen in der nahtlosen Integration von Benutzererfahrungsprinzipien und fundiertem Wissen in der Frontend-Entwicklung.",
+      "أنا مطور واجهة أمامية ماهر، حيث أجمع بين مهاراتي في تطوير الواجهات الأمامية وفهمي العميق لمبادئ تجربة المستخدم، مما يسمح لي بإنشاء تجارب مستخدم متميزة ومبتكرة",
     headerDescription:
-      "Mit fast einem Jahr Erfahrung als Junior Frontend-Entwickler treibt mich meine Leidenschaft für Innovation zu meiner Kompetenz in der Frontend-Entwicklung. Ich zeichne mich durch die Entwicklung benutzerzentrierter Anwendungen aus, die konsequent die Erwartungen übertreffen, und meine Bereitschaft, Herausforderungen anzunehmen, macht mich zu einem einzigartigen Talent auf diesem Gebiet.",
-    cvDownload: "Lebenslauf herunterladen",
-    moreInfo:
-      "Für weitere Informationen überprüfen Sie meinen Lebenslauf in Ihrer bevorzugten Sprache:",
-    portfolioTitle: "Mein Portfolio",
-    role: "Frontend-Entwickler",
+      "أنا شهاب بن الشيخ، مطور واجهة أمامية يبلغ من العمر 23 عامًا، لدي خبرة سنة في هذا المجال، وقد قضيتها في العمل عن بُعد. حاصل على شهادة في هندسة علوم الحاسوب من المدرسة الوطنية للمهندسين بتونس . أهوى ممارسة الرياضة وركوب الدراجات النارية والرسم",
+    skill: "المهارات",
+    headerSkills:
+      "JavaScript, ES11, TypeScript, HTML, CSS, RWD, React, Hooks, Next.js, Gatsby, React Native, Redux, MobX, Emotion, Styled Components, MUI, AntD, Formik, React Hook Form, Yup, RFF, i18n, JSON Schema, Jest, React Testing Library, Jasmine, Cypress, Nx, Vite, Webpack, GitHub, GitLab, Azure, JIRA",
+    cvDownload: "تحميل السيرة الذاتية",
+    moreInfo: "لمزيد من المعلومات، يرجى التحقق من سيرتي الذاتية  :",
+    portfolioTitle: "أعمالي",
+    role: "مطور واجهة أمامية",
+
     projects: [
       {
-        title: "Instagram-Klon",
+        title: "نسخة من إنستغرام",
         description:
-          "React Vite Instagram-ähnliche Landingpage! Dieses Projekt zeigt eine einfache Landingpage ähnlich wie Instagram, auf der Benutzer Beiträge anzeigen können.",
+          "صفحة واجهة المستخدم لإنستغرام بتقنية React Vite! يعرض هذا المشروع صفحة واجهة مشابهة لإنستغرام، حيث يمكن للمستخدمين عرض المنشورات.",
         technologies: ["React.js", "Tailwind CSS", "Responsive Design"],
         websiteURL: "https://chihebbencheikh1.github.io/Instagram-clone/",
         image: ig,
       },
       {
-        title: "Rechnungsgenerator",
+        title: "مولد فواتير",
         description:
-          "Ein Rechnungsgenerator-Projekt, das mit React und TailwindCSS erstellt wurde. Fügen Sie Artikel, Menge, Preise, Steuersätze und Rabatte hinzu.",
+          "مشروع مولد فواتير بني باستخدام React و TailwindCSS. أضف عناصر وكميات وأسعار وأسعار ضريبة وخصومات.",
         year: 2024,
         technologies: ["React.js", "Tailwind CSS"],
         websiteURL: "https://chihebbencheikh1.github.io/invoice-generator/",
         image: invoice,
       },
       {
-        title: "React E-Bank Landingpage",
+        title: "صفحة مصرفية إلكترونية باستخدام React",
         description:
-          "React-Frontend-Landingpage für eine E-Bank bietet eine benutzerfreundliche Oberfläche für die Verwaltung von Konten und den Zugriff auf Finanzdienstleistungen online und betont Einfachheit und modernes Design.",
+          "صفحة واجهة المستخدم لمصرف إلكتروني باستخدام React تقدم واجهة سهلة الاستخدام لإدارة الحسابات والوصول إلى الخدمات المالية عبر الإنترنت، مع التركيز على البساطة والتصميم الحديث.",
         year: 2023,
         technologies: ["React.js", "Tailwind CSS", "Vite"],
         websiteURL: "https://chihebbencheikh1.github.io/react-e-bank/",
         image: eBank,
       },
       {
-        title: "E-Shop Landingpage",
+        title: "صفحة متجر إلكتروني",
         description:
-          "Dies ist eine Beispiels-E-Shop-Webanwendung für den Verkauf von elektronischen Komponenten und Geräten. Das Projekt ist mit React, Vite und Tailwind CSS erstellt.",
+          "هذا تطبيق ويب عيني لبيع المكونات والأجهزة الإلكترونية. يتم بناء المشروع باستخدام React و Vite و Tailwind CSS.",
         year: 2023,
         technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
         websiteURL: "https://chihebbencheikh1.github.io/My-shop/",
         image: eShop,
       },
       {
-        title: "Tailwind-React-Landing",
+        title: "صفحة موقع تعليمي",
         description:
-          "Eine reaktionsfähige Landingpage-Vorlage, die mit React, Tailwind CSS und Vite erstellt wurde. Die Landingpage ist für eine Bildungsseite konzipiert und präsentiert ihre Funktionen und Dienstleistungen.",
+          "قالب صفحة واجهة مستجيبة تم بناؤه باستخدام React و Tailwind CSS و Vite. تم تصميم الصفحة الرئيسية لموقع تعليمي، لعرض ميزاته وخدماته.",
         year: 2022,
         technologies: [
           "Vite",
-          "Github-Seiten",
-          "Github-Aktionen",
+          "Github pages",
+          "Github actions",
           "Tailwind CSS",
           "JavaScript",
           "React.js",
@@ -173,18 +182,20 @@ export const textContent = {
         image: ed,
       },
       {
-        title: "Space-Portfolio-Spiel",
+        title: "لعبة الفضاء",
         description:
-          "Erstellt ein aufregendes 2D-Weltraumspiel zum Bereitstellen auf AWS unter Verwendung von EC2 und CodeBuild für CI/CD. Dies demonstriert meine Fähigkeiten in der Spielentwicklung und meine Beherrschung der AWS-Cloud.",
+          "أنشأت لعبة فضائية ثنائية الأبعاد مثيرة  على AWS باستخدام EC2 و CodeBuild للCI/CD. يظهر هذا مهاراتي في تطوير الألعاب وإتقاني لسحابة AWS.",
         year: 2022,
         technologies: ["HTML", "CSS", "JavaScript", "Canvas"],
         websiteURL: "https://chihebbencheikh1.github.io/portfolio/index.html",
         image: space,
       },
     ],
-    contactTitle: "KONTAKTIEREN SIE UNS",
-    codeProjects: "Programmierprojekte",
-    contactName: "Chiheb BEN CHEIKH",
+    technologies: "التقنيات",
+    contactTitle: "تواصل معي",
+    codeProjects: "مشاريع البرمجة",
+    contactName: "شهاب بن الشيخ",
     contactEmail: "bencheikh.chiheb@gmail.com",
+    linkedIn: "لينكد إن",
   },
 };

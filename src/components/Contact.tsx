@@ -23,7 +23,7 @@ export const Contact = (titles: any) => {
 
                       <ul className="contact-details">
                         <li>
-                          <span>Chiheb BEN CHEIKH</span>
+                          <span>{titles["titles"][lang]["name"]}</span>
                         </li>
                         <li>
                           <span>bencheikh.chiheb@gmail.com</span>
@@ -35,7 +35,8 @@ export const Contact = (titles: any) => {
                             rel="noopener noreferrer"
                             href="https://www.linkedin.com/in/chiheb-ben-cheikh-448552221/"
                           >
-                            <i className="fab fa-linkedin"></i> Linkedin
+                            <i className="fab fa-linkedin"></i>{" "}
+                            {titles["titles"][lang]["linkedIn"]}
                           </a>
                         </li>
                         <li>

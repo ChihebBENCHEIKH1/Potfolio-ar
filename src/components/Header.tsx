@@ -9,7 +9,10 @@ export const Header = ({ titles }: any) => {
         <section id={titles[lang]["navBar"][0]}>
           <div className="container">
             <div className="header-content">
-              <div className="flex">
+              <div
+                className="flex"
+                style={lang !== "eng" ? { textAlign: "right" } : {}}
+              >
                 <h1>
                   {titles[lang]["I"]}{" "}
                   <span className="typed">
@@ -17,10 +20,16 @@ export const Header = ({ titles }: any) => {
                   </span>
                 </h1>
               </div>
-              <p> {[titles[lang]["myInfo"]]}</p>
+              <p style={lang !== "eng" ? { textAlign: "right" } : {}}>
+                {" "}
+                {[titles[lang]["myInfo"]]}
+              </p>
 
-              <ul className="list-unstyled list-social">
-                <li>
+              <ul
+                className="list-unstyled list-social"
+                style={{ marginRight: "-60px" }}
+              >
+                <li style={lang !== "eng" ? { float: "right" } : {}}>
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
@@ -29,7 +38,7 @@ export const Header = ({ titles }: any) => {
                     <i className="fab fa-linkedin"></i>
                   </a>
                 </li>
-                <li>
+                <li style={lang !== "eng" ? { float: "right" } : {}}>
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
@@ -38,7 +47,7 @@ export const Header = ({ titles }: any) => {
                     <i className="fab fa-github"></i>
                   </a>
                 </li>
-                <li>
+                <li style={lang !== "eng" ? { float: "right" } : {}}>
                   <a
                     target="_blank"
                     rel="noopener noreferrer"

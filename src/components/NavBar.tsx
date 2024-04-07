@@ -31,6 +31,11 @@ const Navbar: React.FC<Props> = ({ titles }: Props) => {
 
   const handleLangToggle = (selectedLang: Language) => {
     setLang(selectedLang);
+    if (selectedLang === "ar") {
+      document.documentElement.setAttribute("dir", "rtl");
+    } else {
+      document.documentElement.setAttribute("dir", "ltr"); // Sets direction to LTR if language is not Arabic
+    }
   };
 
   const scrollToSection = (id: string) => {
@@ -82,10 +87,10 @@ const Navbar: React.FC<Props> = ({ titles }: Props) => {
                 className="smoothScroll"
                 onClick={(e) => {
                   e.preventDefault(); // Prevent the default behavior
-                  handleLangToggle(lang === "eng" ? "de" : "eng");
+                  handleLangToggle(lang === "eng" ? "ar" : "eng");
                 }}
               >
-                {lang === "eng" ? "Deutsch" : "English"}
+                {lang === "eng" ? "Arabic" : "إنجليزية"}
               </a>
             </li>
           </ul>

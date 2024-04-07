@@ -38,7 +38,7 @@ function App() {
           <CVDownload titles={textContent} />
           <Portfolio titles={textContent} />
           <Contact titles={textContent} />
-          <Footer />
+          <Footer titles={textContent} />
         </motion.div>
       </AnimatePresence>
     </>

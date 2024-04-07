@@ -8,13 +8,13 @@ export const About = ({ titles }: { titles: any }) => {
   const { scrollYProgress } = useScroll({
     offset: [0.1, 0.2], // Adjusted offset for better animation start and end
   });
-
+  const textAlign = lang === "eng" ? "left" : "right";
   const scale = useTransform(scrollYProgress, [0, 1], [0.85, 1]);
 
   return (
     <div id="about" className="paddsection">
       <section id={titles[lang]["navBar"][1]}>
-        <div className="container">
+        <div className="container" style={{ direction: "ltr" }}>
           <motion.div
             style={{ scale }}
             transition={{ ease: "easeIn", duration: 0.3 }}
@@ -37,12 +37,30 @@ export const About = ({ titles }: { titles: any }) => {
                   </div>
                 </div>
               </div>
-
               <div className="col-lg-7">
                 <div className="about-descr">
-                  <p className="p-heading">{titles[lang]["headerTitle"]}</p>
-                  <p className="separator mb-30">
+                  <p
+                    className="p-heading"
+                    style={{
+                      textAlign: textAlign,
+                    }}
+                  >
+                    {titles[lang]["headerTitle"]}
+                  </p>
+                  <p
+                    className="separator mb-30"
+                    style={{ textAlign: textAlign, minWidth: "100%" }}
+                  >
                     {titles[lang]["headerDescription"]}
+                    <br />
+                    <p
+                      className="separator mb-30"
+                      style={{ textAlign: textAlign, minWidth: "100%" }}
+                    ></p>
+                    <div style={{ direction: "rtl" }}>
+                      <strong>{titles[lang]["skill"]} :</strong>{" "}
+                      {titles[lang]["headerSkills"]}
+                    </div>
                   </p>
                 </div>
               </div>

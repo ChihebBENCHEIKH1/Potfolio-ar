@@ -1,5 +1,8 @@
 /*  General Styling
 /*-----------------------------------------------------------------------------------*/
+.rtl {
+  direction: rtl;
+}
 
 body {
   background: #ffffff;

@@ -19,7 +19,7 @@ export const Portfolio = ({ titles }: any) => {
 
   return (
     <motion.div style={{ scale }}>
-      <div id={titles[lang]["navBar"][1]} className="text-left paddsection">
+      <div id={titles[lang]["navBar"][2]} className="text-left paddsection">
         <section id="Portfolio">
           <div className="container">
             <div className="section-title text-center">
@@ -39,6 +39,7 @@ export const Portfolio = ({ titles }: any) => {
                     technologies={project.technologies}
                     websiteURL={project.websiteURL}
                     image={project.image}
+                    technologiesi18n={titles[lang]["technologies"]}
                   />
                 ))}
               </div>

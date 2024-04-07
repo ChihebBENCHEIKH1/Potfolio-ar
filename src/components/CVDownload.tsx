@@ -31,17 +31,17 @@ export const CVDownload = ({ titles }: any) => {
               className="btn btn-cv"
             >
               {" "}
-              English
+              {lang === "eng" ? "English" : "إنجليزية"}
             </a>
-            <a
+            {/* <a
               target="_blank"
               rel="noopener noreferrer"
               href={germanCv}
               className="btn btn-cv"
             >
               {" "}
-              Deutsch
-            </a>
+              {lang === "eng" ? "arabic" : "العربية"}
+            </a> */}
             {/* <a
               target="_blank"
               rel="noopener noreferrer"
